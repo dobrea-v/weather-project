@@ -6,8 +6,8 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server",
-    "lint": "./node_modules/.bin/eslint src/index.js",
-    "lintFix": "./node_modules/.bin/eslint src/index.js --fix",
+    "lint": "./node_modules/.bin/eslint src/",
+    "lintFix": "./node_modules/.bin/eslint src/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
