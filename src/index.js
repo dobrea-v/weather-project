@@ -7,6 +7,7 @@ import getDateToday from './js/date'
 // console.log('Proof that it works')
 // console.log(cities)
 getDateToday()
+const ptest = document.querySelector('.one')
 
 const locationSelect = document.querySelector('.location__select')
 locationSelect.addEventListener('change', getEvenet)
@@ -22,24 +23,21 @@ function getEvenet () {
   }
   cityImage.src = cities[city].url
 
-  // function test () {
+  function test () {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=7429042c97e6a05117b067c14694f822`)
+      .then(response => {
+        return response.json()
+      })
+      .then(result => {
+        console.log(result)
+      })
+      .then(result => {
+        const {
+          id
 
-  // }
-  // test()
+        } = result
+        ptest.innerText = id
+      })
+  }
+  test()
 }
-const ptest = document.querySelector('.one')
-const city = 'chisinau'
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=7429042c97e6a05117b067c14694f822`)
-  .then(response => {
-    return response.json()
-  })
-  .then(result => {
-    console.log(result)
-  })
-  .then(result => {
-    const {
-      id
-
-    } = result
-    ptest.innerText = id
-  })
