@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,33 @@
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    <div>
-        <img src="img/skyline.jpg" alt="">
-    </div>
+    <header>
+        Weather App
+        <span class="date"></span>
+        <span class="time"></span>
+    </header>
+    <main>
+        <div class="location">
+                <div class="containerweather">
+                        <p class="one"></p>
+                    </div>
+            <div class="location__select">
+                <h2>Select city from list</h2>
+                <select name="location-select" id="location-select">
+                    <option>Select</option>
+                    <option value="london">London</option>
+                    <option value="chisinau">Chisinau</option>
+                    <option value="moscow">Moscow</option>
+                    <option value="ny">New York</option>
+                    <option value="paris">Paris</option>
+                </select>
+            </div>
+            <img id="location-image"class="location__image" src="img/skyline.jpg" alt="">
+        </div>
+    </main>
 </body>
 <script src="main.js"></script>
+
 </html>
