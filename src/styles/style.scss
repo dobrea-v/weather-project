@@ -1,4 +1,26 @@
 body {
-    background-color: aquamarine;
-    height: 200px;
+    margin: 0;
+}
+
+header {
+    padding: 15px;
+    background-color: #eaeaea;
+}
+
+.location {
+    width: 100%;
+    position: relative;
+
+    &__image {
+        width: 100%;
+    }
+
+    &__select {
+        background-color: cadetblue;
+        position: absolute;
+        padding: 15px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
