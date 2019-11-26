@@ -1,11 +1,7 @@
-import sum from './js/sum'
 import './styles/style.scss'
 import cities from './js/cities'
 import getDateToday from './js/date'
 
-// console.log(sum(1, 2))
-// console.log('Proof that it works')
-// console.log(cities)
 getDateToday()
 const ptest = document.querySelector('.one')
 const ptest2 = document.querySelector('.test2')
@@ -52,6 +48,6 @@ function test (city) {
         main
       } = result
       ptest.innerText = name
-      ptest2.innerText = main
+      ptest2.innerText = main.temp
     })
 }
