@@ -5,37 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <header>
-        Weather App
-        <span class="date"></span>
-        <span class="time"></span>
-    </header>
-    <main>
-      
-        <div class="location">
-            <div class="side left">
-                <p class="one">dasdadasd</p>
-                <p class="test2">dsada</p>
+    <div class="container">
+
+        <header>
+            <div class="row">
+                <div class="container-header">
+                    <img src="https://i.dlpng.com/static/png/1376278-weather-targeting-weather-png-350_350_preview.png"
+                        alt="" class="logo">
+                    <span class="logo-title">Weather Apps</span>
+                </div>
             </div>
-            <div class="side right location__select">
-                <!-- <h2>Select city from list</h2> -->
-                <!-- <select name="location-select" id="location-select">
-                    <option>Select</option>
-                    <option value="london">London</option>
-                    <option value="chisinau">Chisinau</option>
-                    <option value="moscow">Moscow</option>
-                    <option value="ny">New York</option>
-                    <option value="paris">Paris</option>
-                </select> -->
+        </header>
+        <main>
+            <div class="row">
+                <div class="container-main">
+
+                    <div class="side left">
+
+                        <div class="information">
+                            <h2 class="namecity">dasdadasd</h2>
+                            <span class="date"></span>
+                            <p >Descriptions: <span class="weathermain"> </span></p>
+                            <p >Temp:<span class="tempcity">lorem </span></p>
+                            <p >Humidity: <span class="humidity">lorem </span></p>
+                            <p >SpeedWind: <span class="speedwind">lorem </span></p>
+                        </div>
+                        <div class="descripion-image">
+                            <a href="#">
+                            <img class="desciption-image"
+                                src="" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="side right location__select">
+                        <h2>Select city from list</h2>
+                        <select name="location-select" id="location-select" class="select">
+                            <option>Select</option>
+                            <option value="london">London</option>
+                            <option value="chisinau">Chisinau</option>
+                            <option value="moscow">Moscow</option>
+                            <option value="new york">New York</option>
+                            <option value="paris">Paris</option>
+                            <option value="Kiev">Kiev</option>
+                        </select>
+
+                    </div>
+                    <img id="location-image" class="location__image" src="img/skyline.jpg" alt="">
+
+                </div>
             </div>
-            <img id="location-image" class="location__image" src="img/skyline.jpg" alt="">
-        </div>
-    </main>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="row"></div>
+            </div>
+        </footer>
+
+    </div>
 </body>
 <script src="main.js"></script>
 
