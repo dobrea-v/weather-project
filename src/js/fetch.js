@@ -1,6 +1,6 @@
 import weathers from './weathers'
 
-function getDateCity (city) {
+function getDateCity(city) {
   const nameCity = document.querySelector('.namecity')
   const mainCity = document.querySelector('.weathermain')
   const tempCity = document.querySelector('.tempcity')
@@ -26,8 +26,12 @@ function getDateCity (city) {
       if (weather[0].main == weathers[weather[0].main].name) {
         // console.log(weather[0].main)
         // console.log(weathers[weather[0].main].name)
-        const q = document.querySelector('.desciption-image')
-        q.src = weathers[weather[0].main].url
+        mini()
+
+        function mini() {
+          const q = document.querySelector('.desciption-image')
+          q.src = weathers[weather[0].main].url
+        }
       }
     })
 }
