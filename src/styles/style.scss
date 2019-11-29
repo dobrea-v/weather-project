@@ -85,7 +85,7 @@ main {
 
         .left {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items:center;
 
             p {
@@ -99,13 +99,9 @@ main {
 
             img {
                 height: 150px;
-                margin-right: 150px;
                 
             }
-            img:hover{
-                height: 155px;
-                transition: all 0.2s ease-out;
-            }
+            
            
 
         }
@@ -130,7 +126,3 @@ footer{
     // padding: 20px;
     background: rgb(25, 120, 228);
  } 
- .dezactive{
-    height: 255px;
-    transition: all 0.2s ease-out;
-}
