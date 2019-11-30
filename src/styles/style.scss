@@ -1,4 +1,93 @@
 body {
-    background-color: aquamarine;
-    height: 200px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
+
+header {
+    padding: 15px;
+    background-color: #403D58;
+    color: #FFF;
+}
+
+main {
+    height: 60vh;
+}
+
+.location {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &__image {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__select {
+        background-color: #f4f6ff;
+        position: absolute;
+        padding: 15px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid #3f50b5;
+
+        select {
+            width: 100%;
+        }
+
+        &--mini {
+            position: absolute;
+            left: 95%;
+            top: 2%;
+            opacity: 0;
+        }
+    }
+}
+
+// .appear {
+//     animation-delay: 4s;
+//     animation: appear ease-out 0.1s ;
+//     opacity: 1;
+// }
+
+// .selected {
+//     animation-iteration-count: 1;
+//     animation: move ease-in-out 1s;
+//     opacity: 0;
+//     top: 10%;
+//     left: 63%;
+//     transform: none;
+
+// }
+
+// .show {
+//     opacity: 1;
+// }
+
+// @keyframes appear {
+//     0% {
+//         opacity: 0;
+//     }
+//     100% {
+//         opacity: 1;
+//     }
+// }
+
+// @keyframes move {
+//     0% {
+//         top: 50%;
+//         left: 50%;
+//         opacity: 1;
+//     }
+//     50% {
+//         font-size: 8px;
+//         transform: translate(0,0);
+//     }
+//     100% {
+//         top: 10%;
+//         left: 90%;
+//         opacity: 0;
+//         font-size: 1px;
+//     }
+// }

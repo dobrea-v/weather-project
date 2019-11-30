@@ -3,6 +3,14 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+  // entry: {
+  //   main: './src/index.js',
+  //   firstPage: './src/js/first.js',
+  // },
+  // output: {
+  //   path: path.resolve(__dirname, 'dist'),
+  //   filename: '[name].js',
+  // },
   module: {
     rules: [
       {

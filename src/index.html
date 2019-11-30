@@ -6,11 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <img src="img/skyline.jpg" alt="">
-    </div>
+    <header>
+        Weather App
+    </header>
+    <main>
+        <div class="location">
+            <div class="location__select" id="location-select-container">
+                <h2>Select city from list</h2>
+                <select name="location-select" id="location-select">
+                    <option value="none">Select</option>
+                    <option value="london">London</option>
+                    <option value="chisinau">Chisinau</option>
+                    <option value="moscow">Moscow</option>
+                    <option value="ny">New York</option>
+                    <option value="paris">Paris</option>
+                </select>
+            </div>
+            <div class="location__select--mini" id="location__select--mini">
+                <img width="32" height="32" src="https://cdn3.iconfinder.com/data/icons/business-2-43/34/103-512.png" />
+            </div>
+            <img id="location-image" class="location__image" src="img/skyline.jpg" alt="">
+        </div>
+    </main>
 </body>
 <script src="main.js"></script>
 </html>
