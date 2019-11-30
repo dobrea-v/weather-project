@@ -25,7 +25,10 @@ h2 {
 p {
     margin: 0;
 }
-
+a{
+    text-decoration: none;
+    color: #fff;
+}
 header {
     box-sizing: border-box;
     background-color: rgb(25, 120, 228);
@@ -126,3 +129,6 @@ footer{
     // padding: 20px;
     background: rgb(25, 120, 228);
  } 
+.yo-ho-ho{
+    margin-right: 50px;
+}

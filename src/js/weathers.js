@@ -1,18 +1,43 @@
 const weathers = {
+
+  Fewclouds: {
+    name: 'Few clouds',
+    url: 'http://openweathermap.org/img/wn/02d@2x.png'
+  },
+  Scatteredclouds: {
+    name: 'Scattered clouds',
+    url: 'http://openweathermap.org/img/wn/03d@2x.png'
+  },
+  Brokenclouds: {
+    name: 'Broken clouds',
+    url: 'http://openweathermap.org/img/wn/04d@2x.png'
+  },
+  ShowerRain: {
+    name: 'Shower Rain',
+    url: 'http://openweathermap.org/img/wn/09d@2xpng'
+  },
+  Thunderstorm: {
+    name: 'Thunderstorm',
+    url: 'http://openweathermap.org/img/wn/11d@2x.png'
+  },
+  Mist: {
+    name: 'Mist',
+    url: 'http://openweathermap.org/img/wn/50d@2x.png'
+  },
   Clear: {
     name: 'Clear',
-    url: 'https://cdn.pixabay.com/photo/2015/12/03/15/43/sun-1075154_640.png'
+    url: 'http://openweathermap.org/img/wn/01d@2x.png'
   },
   Clouds: {
-    url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Gnome-weather-few-clouds.svg/1024px-Gnome-weather-few-clouds.svg.png',
+    url: 'http://openweathermap.org/img/wn/02d@2x.png',
     name: 'Clouds'
   },
   Snow: {
-    url: 'https://cdn2.iconfinder.com/data/icons/weather-24/256/Snow_Day-512.png',
+    url: 'http://openweathermap.org/img/wn/13d@2x.png',
     name: 'Snow'
   },
   Rain: {
-    url: 'https://icon-library.net/images/rain-icon-png/rain-icon-png-6.jpg',
+    url: 'http://openweathermap.org/img/wn/10d@2x.png',
     name: 'Rain'
   }
 

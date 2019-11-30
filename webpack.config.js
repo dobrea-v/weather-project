@@ -3,6 +3,14 @@ var CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
+  entry: {
+    main: './src/index.js',
+    first: './src/js/first.js',
+  },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].js',
+  },
   module: {
     rules: [{
       test: /\.s[ac]ss$/i,
@@ -29,6 +37,10 @@ module.exports = {
       to: './'
     },
     {
+      from: 'src/list.html',
+      to: './'
+    },
+    {
       context: 'src/img',
       from: '**/*',
       to: './img'
@@ -39,5 +51,6 @@ module.exports = {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 9000
+    
   }
 }
