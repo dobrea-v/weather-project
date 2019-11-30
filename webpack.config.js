@@ -3,14 +3,14 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  // entry: {
-  //   main: './src/index.js',
-  //   firstPage: './src/js/first.js',
-  // },
-  // output: {
-  //   path: path.resolve(__dirname, 'dist'),
-  //   filename: '[name].js',
-  // },
+  entry: {
+    main: './src/index.js',
+    listPage: './src/js/list.js',
+  },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].js',
+  },
   module: {
     rules: [
       {
@@ -38,6 +38,10 @@ module.exports = {
     }),
     new CopyWebpackPlugin([{
       from: 'src/index.html',
+      to: './',
+    },
+    {
+      from: 'src/list.html',
       to: './',
     },
     {

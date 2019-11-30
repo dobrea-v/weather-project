@@ -1,11 +1,11 @@
 /* eslint-disable no-console */
 import './styles/style.scss';
 import Cities from './js/cities';
-import { getTodayWeather } from './js/api';
+import { getTodayWeatherByCity } from './js/api';
 
 const locationSelect = document.getElementById('location-select');
-// const locationSelectMini = document.getElementById('location__select--mini');
-// const locationSelectContainer = document.getElementById('location-select-container');
+const locationSelectMini = document.getElementById('location__select--mini');
+const locationSelectContainer = document.getElementById('location-select-container');
 const cityImage = document.getElementById('location-image');
 
 async function init() {
@@ -14,9 +14,9 @@ async function init() {
   if (savedCity && Cities[savedCity]) {
     cityImage.src = Cities[savedCity].url;
     locationSelect.value = savedCity;
-    // locationSelectContainer.classList.add('selected');
-    // locationSelectMini.classList.add('appear');
-    const data = await getTodayWeather(savedCity);
+    locationSelectContainer.classList.add('selected');
+    locationSelectMini.classList.add('appear');
+    const data = await getTodayWeatherByCity(savedCity);
     console.log(data);
   }
 }
@@ -24,13 +24,13 @@ async function init() {
 init();
 
 
-// locationSelectMini.addEventListener('click', () => {
-//   if (locationSelectContainer.classList.contains('selected') && !locationSelectContainer.classList.contains('show')) {
-//     locationSelectContainer.classList.add('show');
-//   } else if (locationSelectContainer.classList.contains('show')) {
-//     locationSelectContainer.classList.remove('show');
-//   }
-// });
+locationSelectMini.addEventListener('click', () => {
+  if (locationSelectContainer.classList.contains('selected') && !locationSelectContainer.classList.contains('show')) {
+    locationSelectContainer.classList.add('show');
+  } else if (locationSelectContainer.classList.contains('show')) {
+    locationSelectContainer.classList.remove('show');
+  }
+});
 
 locationSelect.addEventListener('change', async (event) => {
   const city = event.target.value;
@@ -41,14 +41,16 @@ locationSelect.addEventListener('change', async (event) => {
     return;
   }
 
-  // Add some animation's
-  // 1. Add state to elements when we select them
-  // locationSelectContainer.classList.add('selected');
-  // locationSelectMini.classList.add('appear');
+  locationSelectContainer.classList.add('selected');
+  locationSelectMini.classList.add('appear');
   localStorage.setItem('savedCity', city);
-  const data = await getTodayWeather(city);
+  cityImage.src = Cities[city].url;
+  const data = await getTodayWeatherByCity(city);
 
   console.log(data);
-
-  cityImage.src = Cities[city].url;
 });
+
+
+function renderCityWeather(data) {
+
+}

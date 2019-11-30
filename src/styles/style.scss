@@ -7,6 +7,10 @@ header {
     padding: 15px;
     background-color: #403D58;
     color: #FFF;
+    a {
+        color: #FFF;
+        margin-left: 50px;
+    }
 }
 
 main {
@@ -45,49 +49,49 @@ main {
     }
 }
 
-// .appear {
-//     animation-delay: 4s;
-//     animation: appear ease-out 0.1s ;
-//     opacity: 1;
-// }
+.appear {
+    animation-delay: 4s;
+    animation: appear ease-out 0.1s ;
+    opacity: 1;
+}
 
-// .selected {
-//     animation-iteration-count: 1;
-//     animation: move ease-in-out 1s;
-//     opacity: 0;
-//     top: 10%;
-//     left: 63%;
-//     transform: none;
+.selected {
+    animation-iteration-count: 1;
+    animation: move ease-in-out 1s;
+    opacity: 0;
+    top: 10%;
+    left: 63%;
+    transform: none;
 
-// }
+}
 
-// .show {
-//     opacity: 1;
-// }
+.show {
+    opacity: 1;
+}
 
-// @keyframes appear {
-//     0% {
-//         opacity: 0;
-//     }
-//     100% {
-//         opacity: 1;
-//     }
-// }
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
-// @keyframes move {
-//     0% {
-//         top: 50%;
-//         left: 50%;
-//         opacity: 1;
-//     }
-//     50% {
-//         font-size: 8px;
-//         transform: translate(0,0);
-//     }
-//     100% {
-//         top: 10%;
-//         left: 90%;
-//         opacity: 0;
-//         font-size: 1px;
-//     }
-// }
+@keyframes move {
+    0% {
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+    }
+    50% {
+        font-size: 8px;
+        transform: translate(0,0);
+    }
+    100% {
+        top: 10%;
+        left: 90%;
+        opacity: 0;
+        font-size: 1px;
+    }
+}
