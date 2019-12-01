@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>WeatherApp</title>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        Weather App
-        <a href="/list.html">List</a>
+        <span>
+            <a class="home" href="/">Weather App</a>
+        </span>
+        <div class="links">
+            <a href="/list.html">List</a>
+        </div>
     </header>
     <main>
         <div class="location">
@@ -29,9 +35,22 @@
             <div class="location__select--mini" id="location__select--mini">
                 <img width="32" height="32" src="https://cdn3.iconfinder.com/data/icons/business-2-43/34/103-512.png" />
             </div>
+            <div class="weather-container">
+                <img src="" alt="" id="weather-icon">
+                <div class="weather-container__header">
+                    <span id="cityName"></span>
+                    <span id="cityTemp"></span>
+                </div>
+                <div class="weather-container__body">
+                    <p id="minTemp"></p>
+                    <p id="maxTemp"></p>
+                    <p id="humidity"></p>
+                </div>
+            </div>
             <img id="location-image" class="location__image" src="img/skyline.jpg" alt="">
         </div>
     </main>
 </body>
 <script src="main.js"></script>
+
 </html>
