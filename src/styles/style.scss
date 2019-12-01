@@ -93,9 +93,6 @@ main {
 
 }
 
-.hide {
-    display: none;
-}
 
 .show {
     opacity: 1;
@@ -152,3 +149,7 @@ main {
   .bouncing-loader > div:nth-child(3) {
     animation-delay: 0.4s;
   }
+
+  .hide {
+    display: none;
+}
