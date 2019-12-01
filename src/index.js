@@ -32,6 +32,7 @@ locationSelectMini.addEventListener('click', () => {
     locationSelectContainer.classList.add('show');
   } else if (locationSelectContainer.classList.contains('show')) {
     locationSelectContainer.classList.remove('show');
+    locationSelectContainer.classList.remove('hide');
   }
 });
 
@@ -47,8 +48,10 @@ locationSelect.addEventListener('change', async (event) => {
   locationSelectContainer.classList.add('selected');
   locationSelectMini.classList.add('appear');
   localStorage.setItem('savedCity', city);
+  locationSelect.setAttribute('disabled', true);
   cityImage.src = Cities[city].url;
   const data = await getTodayWeatherByCity(city);
+  locationSelect.removeAttribute('disabled');
 
   console.log(data);
   // eslint-disable-next-line no-use-before-define
