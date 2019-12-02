@@ -11,7 +11,7 @@ const cities = {
     url: 'https://cdn.getyourguide.com/img/tour_img-1233054-98.jpg',
     name: 'Moscow'
   },
-  'new york': {
+  ny: {
     url: 'https://d12dkjq56sjcos.cloudfront.net/pub/media/wysiwyg/newyork/01-city-landing/New-York-Skyline-Big-Bus-Tours-Jan-2018.jpg',
     name: 'New York'
   },

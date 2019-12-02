@@ -1,27 +1,27 @@
-import './styles/style.scss'
-import cities from './js/cities'
-import getDateToday from './js/date'
-import getDateCity from './js/fetch'
-import setLocalStorage from './js/localstorage'
+import "./styles/style.scss";
+import cities from "./js/cities";
+import getDateToday from "./js/date";
+import getDateCity from "./js/fetch";
+import setLocalStorage from "./js/localstorage";
 
-getDateToday()
+getDateToday();
 
-const locationSelect = document.querySelector('.location__select')
-locationSelect.addEventListener('change', getEvenet)
+const locationSelect = document.querySelector(".location__select");
+locationSelect.addEventListener("change", getEvenet);
 
-setLocalStorage()
+setLocalStorage();
 
-function getEvenet () {
-  const city = event.target.value
-  const defaultCity = 'img/skyline.jpg'
-  const cityImage = document.querySelector('#location-image')
+function getEvenet() {
+  const city = event.target.value;
+  const defaultCity = "img/skyline.jpg";
+  const cityImage = document.querySelector("#location-image");
 
   if (!cities[city]) {
-    cityImage.src = defaultCity
+    cityImage.src = defaultCity;
   } else {
-    cityImage.src = cities[city].url
+    cityImage.src = cities[city].url;
   }
-  localStorage.setItem('name', city)
+  localStorage.setItem("name", city);
 
-  getDateCity(city)
+  getDateCity(city);
 }
